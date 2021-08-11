@@ -1,0 +1,15 @@
+{
+  "name": "mern-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "durable-functions": "^1.4.6",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.4"
+  },
+  "devDependencies": {}
+}

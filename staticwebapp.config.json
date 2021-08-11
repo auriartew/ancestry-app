@@ -1,0 +1,18 @@
+{
+    "routes": [
+        {
+            "route": "/posts",
+            "rewrite": "/index.html"
+        }
+    ],
+    "navigationFallback": {
+        "rewrite": "/index.html",
+        "exclude": [
+            "/static/media/*.{jpg,gif,png}",
+            "/static/css/*"
+        ]
+    },
+    "mimeTypes": {
+        ".json": "text/json"
+    }
+}

@@ -1,0 +1,246 @@
+div.family-tree {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(184, 236, 197, 0.897);
+	overflow-y: auto;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.row2 {
+	height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.row1 {
+	height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.row0 {
+	height: 25vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.paternal {
+	display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.maternal {
+	display: flex;
+	justify-content: end;
+
+	position: relative;
+
+	align-items: flex-end;
+}
+
+.grandpa {
+	margin-right: 6rem;
+}
+
+.grandma {
+	margin-left: 6rem;
+}
+
+.dad {
+	margin-right: 3rem;
+}
+
+.mom {
+	margin-left: 3rem;
+}
+
+div.node {
+	height: 8rem;
+	width: 5rem;
+	border-radius: 5px;
+	background-color: rgba(128, 128, 128, 0.37);
+	padding: 2px;
+
+}
+
+div.node:hover {
+	border: 2px dotted rgb(0, 60, 128);
+	padding: 0px;
+}
+
+div.node p {
+	text-align: center;
+	position: relative;
+	top: 2rem;
+	bottom: 0rem;
+}
+
+div.node img {
+	position: relative !important;
+	top: 0.5rem !important;
+	display: block !important;
+	margin: auto !important;
+	height: 4rem !important;
+	width: 4rem !important;
+}
+
+div.popupBox {
+	
+	height: 12rem;
+	width: 25rem;
+	background-color: rgb(247, 246, 241);
+	display: flex;
+	flex: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	box-shadow: 12px 12px 2px 1px rgba(173, 173, 173, 0.2);;
+}
+
+div.popupBox h4 {
+	text-align: center;
+}
+
+div.popupBox .left {
+	height: 100%;
+	border-right: 4px solid rgb(255, 255, 255);
+	background-color: rgb(214, 221, 218);
+	display: flex;
+	flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+div.popupBox .button-column {
+	position: relative;
+	right: -1rem;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	height: 100%;
+}
+
+div.popupBox img {
+	margin: auto !important;
+	height: 4rem !important;
+	width: 4rem !important;
+	
+}
+
+img#x  {
+	position: relative;
+
+	top: -6rem;
+	right: -0.5rem;
+	height: 1rem !important;
+	width: 1rem !important;
+}
+
+div.family-tree.btn {
+	background: linear-gradient(45deg, rgba(202, 197, 197, 0.15), transparent) !important;
+	border-color: rgb(255, 255, 255, 0.5);
+	box-shadow: inset 0 0px 5px rgba(0, 0, 0, 0.2);
+	border-top: 1px solid rgb(255, 255, 255, 0.1);
+	border-left: 1px solid rgb(255, 255, 255, 0.1);
+	color: #fff;
+	z-index: 1;
+	letter-spacing: 1px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.btn:hover {
+	background-color: rgb(0, 0, 0, 0.5);
+	transition: 0.5s;
+}
+
+.btn::before {
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+}
+
+.edit-popup {
+	position: absolute;
+	background-color: rgb(236, 235, 219, 0.5);
+	height: 100vh;
+	width: 100vw;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.75);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+
+.center-edit {
+	width: 40%;
+	background-color: rgb(136, 170, 170);
+	padding: 3rem;
+	padding-bottom: 3rem;
+}
+
+.edit-form {
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+div.edit-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.edit-options {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.add-relative-popup {
+	position: absolute;
+	background-color: rgb(236, 235, 219, 0.5);
+	height: 100vh;
+	width: 100vw;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.75);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+
+.center-edit {
+	width: 30%;
+	background-color: rgb(227, 236, 236);
+	padding: 15px;
+}
+
+.add-form {
+	width: 100%;
+}
+
+div.add-form input[type="radio"], input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+	height: 1rem;
+	width: 1rem;
+}
